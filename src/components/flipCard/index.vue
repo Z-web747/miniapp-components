@@ -149,7 +149,7 @@ interface CardItemModel {
       margin: 24px;
       justify-content: space-between;
       flex-wrap: wrap;
-      perspective: 500px;
+      perspective: 1000px;
       .card-item{
         position: relative;
         width: 30%;
@@ -157,7 +157,7 @@ interface CardItemModel {
         flex-grow: 0;
         height: 160px;
         margin-bottom: 24px;
-        transition: transform 1s ease;
+        transition: transform 0.3s ease;
         transform-style:preserve-3d; // 让转换的子元素保留3D转换
 
         .card-item-body{
@@ -171,19 +171,16 @@ interface CardItemModel {
           justify-content: center;
           align-items: center;
           width: 100%;
-          overflow: hidden;
           backface-visibility: hidden;
         }
         .front{
           width: 100%;
-          overflow: hidden;
           z-index: 2;
           background: skyblue;
           transform: rotateY(0deg);
         }
         .back{
           width: 100%;
-          overflow: hidden;
           display: flex;
           justify-content: center;
           align-items: center;
